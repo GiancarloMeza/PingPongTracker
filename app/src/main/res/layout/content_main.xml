@@ -19,7 +19,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:contentDescription="Circle Icon"
-            android:tint="#000000"
+            android:tint="@color/primaryTextColor"
             app:srcCompat="@drawable/circle"
             tools:ignore="HardcodedText" />
 
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="@string/name"
-            android:textColor="#000000"
+            android:textColor="@color/primaryTextColor"
             android:textSize="18sp" />
 
         <EditText
@@ -37,6 +37,8 @@
             android:hint="@string/enter_your_name"
             android:inputType="text"
             android:maxLines="1"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColorHint"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -50,7 +52,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:contentDescription="Circle Icon"
-            android:tint="#000000"
+            android:tint="@color/primaryTextColor"
             app:srcCompat="@drawable/circle"
             tools:ignore="HardcodedText" />
 
@@ -59,7 +61,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="@string/name"
-            android:textColor="#000000"
+            android:textColor="@color/primaryTextColor"
             android:textSize="18sp" />
 
         <EditText
@@ -68,6 +70,8 @@
             android:hint="@string/enter_your_name"
             android:inputType="text"
             android:maxLines="1"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColorHint"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -81,7 +85,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:contentDescription="Circle Icon"
-            android:tint="#000000"
+            android:tint="@color/primaryTextColor"
             app:srcCompat="@drawable/circle"
             tools:ignore="HardcodedText" />
 
@@ -90,7 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="@string/name"
-            android:textColor="#000000"
+            android:textColor="@color/primaryTextColor"
             android:textSize="18sp" />
 
         <EditText
@@ -99,6 +103,8 @@
             android:hint="@string/enter_your_name"
             android:inputType="text"
             android:maxLines="1"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColorHint"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -112,7 +118,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:contentDescription="Circle Icon"
-            android:tint="#000000"
+            android:tint="@color/primaryTextColor"
             app:srcCompat="@drawable/circle"
             tools:ignore="HardcodedText" />
 
@@ -121,7 +127,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="@string/name"
-            android:textColor="#000000"
+            android:textColor="@color/primaryTextColor"
             android:textSize="18sp" />
 
         <EditText
@@ -130,6 +136,8 @@
             android:hint="@string/enter_your_name"
             android:inputType="text"
             android:maxLines="1"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColorHint"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -143,7 +151,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:contentDescription="Circle Icon"
-            android:tint="#000000"
+            android:tint="@color/primaryTextColor"
             app:srcCompat="@drawable/circle"
             tools:ignore="HardcodedText" />
 
@@ -152,7 +160,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="@string/name"
-            android:textColor="#000000"
+            android:textColor="@color/primaryTextColor"
             android:textSize="18sp" />
 
         <EditText
@@ -161,6 +169,8 @@
             android:hint="@string/enter_your_name"
             android:inputType="text"
             android:maxLines="1"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColorHint"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -174,7 +184,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:contentDescription="Circle Icon"
-            android:tint="#000000"
+            android:tint="@color/primaryTextColor"
             app:srcCompat="@drawable/circle"
             tools:ignore="HardcodedText" />
 
@@ -183,7 +193,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="@string/name"
-            android:textColor="#000000"
+            android:textColor="@color/primaryTextColor"
             android:textSize="18sp" />
 
         <EditText
@@ -192,6 +202,8 @@
             android:hint="@string/enter_your_name"
             android:inputType="text"
             android:maxLines="1"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColorHint"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -205,7 +217,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:contentDescription="Circle Icon"
-            android:tint="#000000"
+            android:tint="@color/primaryTextColor"
             app:srcCompat="@drawable/circle"
             tools:ignore="HardcodedText" />
 
@@ -214,7 +226,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="@string/name"
-            android:textColor="#000000"
+            android:textColor="@color/primaryTextColor"
             android:textSize="18sp" />
 
         <EditText
@@ -223,6 +235,8 @@
             android:hint="@string/enter_your_name"
             android:inputType="text"
             android:maxLines="1"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColorHint"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -236,7 +250,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:contentDescription="Circle Icon"
-            android:tint="#000000"
+            android:tint="@color/primaryTextColor"
             app:srcCompat="@drawable/circle"
             tools:ignore="HardcodedText" />
 
@@ -245,7 +259,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="@string/name"
-            android:textColor="#000000"
+            android:textColor="@color/primaryTextColor"
             android:textSize="18sp" />
 
         <EditText
@@ -254,6 +268,8 @@
             android:hint="@string/enter_your_name"
             android:inputType="text"
             android:maxLines="1"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColorHint"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -267,7 +283,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:contentDescription="Circle Icon"
-            android:tint="#000000"
+            android:tint="@color/primaryTextColor"
             app:srcCompat="@drawable/circle"
             tools:ignore="HardcodedText" />
 
@@ -276,7 +292,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="@string/name"
-            android:textColor="#000000"
+            android:textColor="@color/primaryTextColor"
             android:textSize="18sp" />
 
         <EditText
@@ -285,6 +301,8 @@
             android:hint="@string/enter_your_name"
             android:inputType="text"
             android:maxLines="1"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColorHint"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -298,7 +316,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:contentDescription="Circle Icon"
-            android:tint="#000000"
+            android:tint="@color/primaryTextColor"
             app:srcCompat="@drawable/circle"
             tools:ignore="HardcodedText" />
 
@@ -307,7 +325,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="@string/name"
-            android:textColor="#000000"
+            android:textColor="@color/primaryTextColor"
             android:textSize="18sp" />
 
         <EditText
@@ -316,6 +334,8 @@
             android:hint="@string/enter_your_name"
             android:inputType="text"
             android:maxLines="1"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColorHint"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -329,7 +349,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:contentDescription="Circle Icon"
-            android:tint="#000000"
+            android:tint="@color/primaryTextColor"
             app:srcCompat="@drawable/circle"
             tools:ignore="HardcodedText" />
 
@@ -338,7 +358,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="@string/name"
-            android:textColor="#000000"
+            android:textColor="@color/primaryTextColor"
             android:textSize="18sp" />
 
         <EditText
@@ -347,6 +367,8 @@
             android:hint="@string/enter_your_name"
             android:inputType="text"
             android:maxLines="1"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColorHint"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -360,7 +382,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:contentDescription="Circle Icon"
-            android:tint="#000000"
+            android:tint="@color/primaryTextColor"
             app:srcCompat="@drawable/circle"
             tools:ignore="HardcodedText" />
 
@@ -369,7 +391,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:text="@string/name"
-            android:textColor="#000000"
+            android:textColor="@color/primaryTextColor"
             android:textSize="18sp" />
 
         <EditText
@@ -378,6 +400,8 @@
             android:hint="@string/enter_your_name"
             android:inputType="text"
             android:maxLines="1"
+            android:textColor="@color/primaryTextColor"
+            android:textColorHint="@color/primaryTextColorHint"
             android:textSize="12sp" />
     </LinearLayout>
 
