@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:ignore="UseCompoundDrawables"
+    tools:showIn="@layout/content_main">
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:contentDescription="Circle Icon"
+        android:tint="@color/primaryTextColor"
+        app:srcCompat="@drawable/circle"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="@string/name"
+        android:textColor="@color/primaryTextColor"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/inputName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_your_name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:textColor="@color/primaryTextColor"
+        android:textColorHint="@color/primaryTextColorHint"
+        android:textSize="12sp" />
+</LinearLayout>
