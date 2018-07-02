@@ -9,6 +9,8 @@
     <string name="player_two_name">AG</string>
     <string name="round_name">Qualifiers</string>
     <string name="dot">&#183;</string>
+    <string name="title_activity_tournament">TournamentActivity</string>
+    <string name="enter_your_score">0</string>
 
 
 </resources>
