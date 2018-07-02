@@ -394,6 +394,7 @@
             android:textColor="@color/primaryTextColor"
             android:textSize="18sp" />
 
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -404,6 +405,7 @@
             android:textColorHint="@color/primaryTextColorHint"
             android:textSize="12sp" />
     </LinearLayout>
+
 
 
 </LinearLayout>

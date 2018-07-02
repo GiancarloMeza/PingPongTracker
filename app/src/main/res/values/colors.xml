@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorPrimary">#FF0000</color>
+    <color name="colorPrimaryDark">#AA0000</color>
     <color name="colorAccent">#9E9E9E</color>
     <color name="primaryTextColor">#9E9E9E</color>
     <color name="primaryTextColorHint">#CCCCCC</color>
+    <color name="primaryCardColor">#696969</color>
+    <color name="player_name_color">#696969</color>
+
 </resources>

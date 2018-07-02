@@ -3,4 +3,12 @@
     <string name="action_settings">Settings</string>
     <string name="name">Name</string>
     <string name="enter_your_name">Enter Your Name</string>
+    <string name="group_number">Group 1</string>
+    <string name="game_number_one">Game 1</string>
+    <string name="player_one_name">GM</string>
+    <string name="player_two_name">AG</string>
+    <string name="round_name">Qualifiers</string>
+    <string name="dot">&#183;</string>
+
+
 </resources>
