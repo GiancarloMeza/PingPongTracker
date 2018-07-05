@@ -86,11 +86,11 @@
                 android:textSize="14sp" />
 
             <LinearLayout
+                android:id="@+id/playerOneScoreContainer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_below="@+id/textGameNumber"
-                android:layout_marginTop="5dp"
                 android:textColor="#000000"
                 android:orientation="horizontal">
 
@@ -102,8 +102,10 @@
                     android:inputType="number"
                     android:maxLines="1"
                     android:textSize="14sp"
+                    android:background="@null"
                     android:textColor="@android:color/black"
-                    android:textColorHint="@color/primaryTextColorHint"/>
+                    android:textColorHint="@color/primaryTextColorHint"
+                    android:layout_margin="7dp"/>
 
                 <EditText
                     android:id="@+id/inputScore2"
@@ -112,9 +114,11 @@
                     android:hint="@string/enter_your_score"
                     android:inputType="number"
                     android:maxLines="1"
+                    android:background="@null"
                     android:textSize="14sp"
                     android:textColor="@android:color/black"
-                    android:textColorHint="@color/primaryTextColorHint"/>
+                    android:textColorHint="@color/primaryTextColorHint"
+                    android:layout_margin="7dp"/>
 
                 <EditText
                     android:id="@+id/inputScore3"
@@ -124,12 +128,18 @@
                     android:inputType="number"
                     android:maxLines="1"
                     android:textSize="14sp"
+                    android:background="@null"
                     android:textColor="@android:color/black"
-                    android:textColorHint="@color/primaryTextColorHint"/>
+                    android:textColorHint="@color/primaryTextColorHint"
+                    android:layout_margin="7dp"/>
 
             </LinearLayout>
 
+
+
             <LinearLayout
+                android:id="@+id/playerTwoScoreContainer"
+                android:layout_below="@id/playerOneScoreContainer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -145,8 +155,11 @@
                     android:inputType="number"
                     android:maxLines="1"
                     android:textSize="14sp"
+                    android:background="@null"
                     android:textColor="@android:color/black"
-                    android:textColorHint="@color/primaryTextColorHint"/>
+                    android:textColorHint="@color/primaryTextColorHint"
+                    android:layout_margin="7dp"/>
+
 
                 <EditText
                     android:id="@+id/inputPlayer2Score2"
@@ -156,8 +169,10 @@
                     android:inputType="number"
                     android:maxLines="1"
                     android:textSize="14sp"
+                    android:background="@null"
                     android:textColor="@android:color/black"
-                    android:textColorHint="@color/primaryTextColorHint" />
+                    android:textColorHint="@color/primaryTextColorHint"
+                    android:layout_margin="7dp"/>
 
                 <EditText
                     android:id="@+id/inputPlayer2Score3"
@@ -167,12 +182,20 @@
                     android:inputType="number"
                     android:maxLines="1"
                     android:textSize="14sp"
+                    android:background="@null"
                     android:textColor="@android:color/black"
-                    android:textColorHint="@color/primaryTextColorHint"/>
+                    android:textColorHint="@color/primaryTextColorHint"
+                    android:layout_margin="7dp"/>
+
+
 
             </LinearLayout>
 
+
+
         </RelativeLayout>
+
+
 
     </android.support.v7.widget.CardView>
 

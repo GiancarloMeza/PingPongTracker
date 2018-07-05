@@ -17,6 +17,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String NAMES = "names";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,17 +26,9 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, TournamentActivity.class);
-                startActivity(intent);
-            }
-        });
-
         final RecyclerView recyclerNameInputs = (RecyclerView) findViewById(R.id.recyclerNameInputs);
-        recyclerNameInputs.setAdapter(new NameInputsAdapter(this, new NameInputsAdapter
+
+        final NameInputsAdapter adapter = new NameInputsAdapter(this, new NameInputsAdapter
                 .TextChangeListener() {
             @Override
             public void onTextChanged(CharSequence charSequence, int position) {
@@ -45,10 +39,20 @@ public class MainActivity extends AppCompatActivity {
                     adapter.notifyDataSetChanged();
                 }
             }
-        }));
+        });
 
+        recyclerNameInputs.setAdapter(adapter);
         recyclerNameInputs.setLayoutManager(new LinearLayoutManager(this));
 
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, TournamentActivity.class);
+                intent.putExtra(NAMES, adapter.getNames().toArray());
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
