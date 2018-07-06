@@ -10,9 +10,6 @@ import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 
-import java.security.acl.Group;
-import java.util.Arrays;
-
 import static com.giancarlomeza.pingpongtracker.MainActivity.NAMES;
 
 public class TournamentActivity extends AppCompatActivity {
