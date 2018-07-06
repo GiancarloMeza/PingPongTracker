@@ -2,6 +2,8 @@ package com.giancarlomeza.pingpongtracker;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +14,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import java.util.Arrays;
 import java.util.BitSet;
 import java.util.List;
 
@@ -32,12 +35,22 @@ public class MainActivity extends AppCompatActivity {
                 .TextChangeListener() {
             @Override
             public void onTextChanged(CharSequence charSequence, int position) {
-                NameInputsAdapter adapter = (NameInputsAdapter) recyclerNameInputs.getAdapter();
-                List<String> names = adapter.getNames();
-                if (names.size() == position) {
-                    names.add(String.valueOf(charSequence));
-                    adapter.notifyDataSetChanged();
+                final NameInputsAdapter adapter = (NameInputsAdapter) recyclerNameInputs.getAdapter();
+                final List<String> names = adapter.getNames();
+                names.remove(position);
+                names.add(position, String.valueOf(charSequence));
+
+                if (position + 1 == names.size()) {
+                    names.add("");
+
+                    new Handler(Looper.myLooper()).postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+                            adapter.notifyDataSetChanged();
+                        }
+                    }, 100);
                 }
+                System.out.println(Arrays.asList(adapter.getNames()));
             }
         });
 
@@ -49,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, TournamentActivity.class);
-                intent.putExtra(NAMES, adapter.getNames().toArray());
+                intent.putExtra(NAMES, adapter.getNames().toArray(new String[adapter.getNames().size()]));
                 startActivity(intent);
             }
         });

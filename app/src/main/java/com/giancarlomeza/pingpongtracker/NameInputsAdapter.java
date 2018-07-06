@@ -24,6 +24,7 @@ class NameInputsAdapter extends RecyclerView.Adapter<NameInputsAdapter.ViewHolde
         this.context = context;
         this.listener = listener;
         this.names = new ArrayList<>();
+        this.names.add("");
     }
 
     @NonNull
@@ -36,6 +37,7 @@ class NameInputsAdapter extends RecyclerView.Adapter<NameInputsAdapter.ViewHolde
 
     @Override
     public void onBindViewHolder(@NonNull final NameInputsAdapter.ViewHolder viewHolder, int position) {
+        viewHolder.inputName.setText(names.get(position));
         viewHolder.inputName.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence charSequence, int i, int i1, int i2) {
@@ -44,7 +46,7 @@ class NameInputsAdapter extends RecyclerView.Adapter<NameInputsAdapter.ViewHolde
 
             @Override
             public void onTextChanged(CharSequence charSequence, int i, int i1, int i2) {
-                listener.onTextChanged(charSequence, viewHolder.getAdapterPosition());
+                listener.onTextChanged(charSequence, viewHolder.getLayoutPosition());
             }
 
             @Override
@@ -56,7 +58,7 @@ class NameInputsAdapter extends RecyclerView.Adapter<NameInputsAdapter.ViewHolde
 
     @Override
     public int getItemCount() {
-        return names.size() + 1;
+        return names.size();
     }
 
     public List<String> getNames() {
